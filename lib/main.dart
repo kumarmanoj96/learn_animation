@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'guillotine.dart';
-
+import './screens/opacity_demo_screen.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new Guillotine(),
+      home: OpacityDemoScreen(),
     );
   }
 }
