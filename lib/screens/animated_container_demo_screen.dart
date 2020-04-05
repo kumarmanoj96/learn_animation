@@ -9,6 +9,26 @@ class AnimatedContainerDemoScreen extends StatefulWidget {
 class _AnimatedContainerDemoScreenState
     extends State<AnimatedContainerDemoScreen> {
   bool _selected = false;
+  BoxDecoration get getDecoration {
+    return _selected
+        ? BoxDecoration(
+            color: Colors.green,
+            border: Border.all(
+              color: Colors.black,
+              width: 8,
+            ),
+            borderRadius: BorderRadius.circular(0),
+          )
+        : BoxDecoration(
+            color: Colors.indigo,
+            border: Border.all(
+              color: Colors.pink,
+              width: 20,
+            ),
+            borderRadius: BorderRadius.circular(15),
+          );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +45,8 @@ class _AnimatedContainerDemoScreenState
           child: AnimatedContainer(
               width: _selected ? 200.0 : 100.0,
               height: _selected ? 100.0 : 200.0,
-              color: _selected ? Colors.red : Colors.blue,
+              // color: _selected ? Colors.red : Colors.blue,
+              decoration: getDecoration,
               alignment:
                   _selected ? Alignment.center : AlignmentDirectional.topCenter,
               duration: Duration(seconds: 2),

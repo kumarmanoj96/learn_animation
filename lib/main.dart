@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './screens/animated_align_demo_screen.dart';
+import './screens/animated_container_demo_screen.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: AnimatedAlignDemoScreen(),
+      home: AnimatedContainerDemoScreen(),
     );
   }
 }
