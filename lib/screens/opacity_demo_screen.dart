@@ -66,6 +66,7 @@ class _OpacityDemoScreenState extends State<OpacityDemoScreen> {
                 AnimatedOpacity(
                   duration: Duration(seconds: 2),
                   opacity: _opacity2,
+                  curve: Curves.easeInOut,
                   child: Container(
                       height: 200,
                       width: 200,
