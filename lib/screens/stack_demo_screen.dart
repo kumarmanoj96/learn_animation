@@ -20,12 +20,12 @@ class StackDemoScreen extends StatelessWidget {
             top: 30,
             left: 30,
             child: Transform.rotate(
-               angle: math.pi / 4.0,
-              origin: Offset.zero,
+               angle: math.pi / 6.0,
+              origin: Offset(100, 0),
               child: Container(
                 color: Colors.pink,
-                height: 150.0,
-                width: 150.0,
+                height: 200.0,
+                width: 200.0,
               ),
             ))
       ],
